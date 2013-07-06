@@ -1,0 +1,29 @@
+{
+    "name": "Picture-In-Picture For Netflix\u2122",   
+    "description": "Docks Netflix\u2122 videos to the corner of the screen allowing seemless browsing between tabs and applications.",
+    "version": "0.0.1",
+    "icons": {
+        "128": "icon.png"
+    },
+	
+    "permissions": [
+        "notifications"
+    ],
+    "minimum_chrome_version": "20.0.1130.1",
+    "manifest_version": 2,
+    "update_url": "http://clients2.google.com/service/update2/crx",
+
+    "background": {
+        "scripts": [
+            "Background.js"
+        ]
+    },
+    "content_scripts": [
+        {
+            "js": [ "ContentScript.js" ], 
+            "matches": [ 
+                "http://movies.netflix.com/WiPlayer?movieid=*" 
+            ]
+        }
+    ]
+}
