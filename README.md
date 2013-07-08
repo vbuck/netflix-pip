@@ -23,10 +23,7 @@ You will have to close the open tab after opening the video in PIP mode. In a fu
 
 Changelog
 ------------------------------------------------------------
-* Update extension to work with latest YouTube re-design.
-* Update extension to work on lastest Chrome.
-* Now displays on HTTPS site.
-* Removed permission prompt.
+* First release.
 
 
 Screenshots
